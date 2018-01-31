@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/dustin/go-humanize"
-	"github.com/etcinit/speedbump"
+	"github.com/wooddy/speedbump"
 	"github.com/gin-gonic/gin"
-	"gopkg.in/redis.v5"
+	"github.com/go-redis/redis"
 )
 
 // RateLimit is a Gin middleware for rate limitting incoming requests based on

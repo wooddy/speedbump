@@ -7,9 +7,9 @@ import (
 
 	"github.com/codegangsta/negroni"
 	"github.com/dustin/go-humanize"
-	"github.com/etcinit/speedbump"
+	"github.com/wooddy/speedbump"
 	"github.com/unrolled/render"
-	"gopkg.in/redis.v5"
+	"github.com/go-redis/redis"
 )
 
 func RateLimit(client *redis.Client, hasher speedbump.RateHasher, max int64) negroni.HandlerFunc {
